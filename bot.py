@@ -17,6 +17,20 @@ async def start(m: types.Message):
 async def ping(m: types.Message):
     await m.answer("pong")
 
+@dp.message_handler(commands=['start'])
+async def send_welcome(message: types.Message):
+    kb = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    kb.add(
+        "🥃 Виски", "🧊 Водка", "🍺 Пиво",
+        "🍷 Вино", "📋 Тесты", "🍹 Коктейли", "🦌 Ягермейстер"
+    )
+    await message.answer("Привет! Выбери категорию:", reply_markup=kb)
+
+@dp.message_handler(Text(equals="Назад"))
+async def go_back(message: types.Message):
+    await send_welcome(message)
+
+
 async def main():
     await dp.start_polling(bot)
 
