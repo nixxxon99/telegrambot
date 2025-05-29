@@ -42,7 +42,7 @@ async def category_whisky(message: types.Message):
 @dp.message_handler(lambda m: m.text == "Monkey Shoulder")
 async def monkey_shoulder(message: types.Message):
     await message.answer_photo(
-        photo="https://upload.wikimedia.org/wikipedia/commons/8/8d/Monkey_Shoulder_scotch_bottle.jpg",
+        photo="https://newelitalco.kz/ru/catalog/monkey-shoulder-40-07l_3?srsltid=AfmBOoqTrBXGaoSsSSo8F6XQuDb0Y65Tb3LRU0xyCWrobLu3mzeZhVHf",
         caption=(
             "1. Monkey Shoulder — это купажированный шотландский виски, созданный винокурней William Grant & Sons.\n"
             "2. Он сочетает солода Glenfiddich, Balvenie и Kininvie, придавая напитку глубокий и многослойный характер.\n"
