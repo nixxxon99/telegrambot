@@ -731,7 +731,10 @@ async def answer_handler(message: types.Message):
         await message.answer(f"❌ Неверно! Правильный ответ: {data['correct']}", reply_markup=types.ReplyKeyboardRemove())
     data["step"] += 1
     await send_question(message)
-async def 
+import asyncio
+
+async def main():
+    await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
