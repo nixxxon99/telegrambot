@@ -31,7 +31,7 @@ async def go_back(message: types.Message):
     await send_welcome(message)
 
 
-async def main():
+async def 
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
