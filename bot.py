@@ -5,7 +5,7 @@ from aiogram import Bot, Dispatcher, Router, F
 from aiogram.filters import CommandStart, Command
 from aiogram.types import (
     Message, KeyboardButton, ReplyKeyboardMarkup,
-    ReplyKeyboardRemove, ReplyKeyboardBuilder, InputMediaPhoto
+    ReplyKeyboardRemove, from aiogram.utils.keyboard import ReplyKeyboardBuilder, InputMediaPhoto
 )
 
 # -----------------------------------------------------------------------------
